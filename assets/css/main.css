@@ -171,7 +171,7 @@ h6 {
   margin-right: 8px;
 }
 
-.header .logo h1 {
+.header .logo h2 {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
@@ -697,7 +697,7 @@ section,
   z-index: 3;
 }
 
-.hero h2 {
+.hero h1 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -714,7 +714,7 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .hero h1 {
     font-size: 32px;
   }
 
@@ -1471,7 +1471,7 @@ section,
   padding-bottom: 15px;
 }
 
-.portfolio-details .portfolio-info ul strong {
+.portfolio-details .portfolio-info ul b {
   text-transform: uppercase;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
