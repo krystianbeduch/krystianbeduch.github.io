@@ -1,0 +1,20 @@
+.language-select {
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 20px;
+    appearance: none; /* Usun domyslny styl selectboxa */
+    -webkit-appearance: none; /* Usun domyslny styl selectboxa dla Safari */
+}
+
+.language-select option {
+    background-color: #000;
+    color: #fff;
+}
+
+.language-select option:hover {
+    background-color: #333;
+}
