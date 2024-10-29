@@ -61,7 +61,8 @@
     function switchLanguage(select) {
       window.location.href = select.value;
     }
-    if (window.location.endsWith("index.html")) {
+    if (window.location.pathname ==="https://krystianbeduch.github.io/index.html") {
+      console.log("test");
       window.location.replace("https://krystianbeduch.github.io/");
     }
   </script>
