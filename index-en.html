@@ -73,19 +73,21 @@
         <h2 class="sitename">Portfolio</h2>
       </a>
 
+      <p id="building">Website is being made</p> <!-- DELETE -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <p style="font-size: 1.5em;">Website is being made</p> <!-- DELETE -->
           <li><a href="#hero" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#services">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <select class="language-select" onchange="switchLanguage(this)">
-              <option value="index-en.html">English</option>
-              <option value="index.html">Polski</option>
-            </select>
+            <label>
+              <select class="language-select" onchange="switchLanguage(this)">
+                <option value="index-en.html">English</option>
+                <option value="index.html">Polski</option>
+              </select>
+            </label>
           </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -99,7 +101,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/home-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/home-bg.jpg" alt="Moje zdjecie - tlo" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
         <h1>Krystian Będuch</h1>
@@ -122,9 +124,9 @@
                 <img src="assets/img/profile-img.jpg" class="img-fluid" alt="My photo">
               </div>
               <div class="col-lg-7 about-info">
-                <p><b>Name: </b><span>Krystian Będuch</span></p>
-                <p><b>Email: </b><span>beduch_krystian@o2.pl</span></p>
-                <p><b>Phone: </b><span>+48 503 722 121</span></p>
+                <p><strong>Name: </strong><span>Krystian Będuch</span></p>
+                <p><strong>Email: </strong><span>beduch_krystian@o2.pl</span></p>
+                <p><strong>Phone: </strong><span>+48 503 722 121</span></p>
               </div>
             </div>
             <!-- row justify-content-between gy-4 -->
@@ -186,14 +188,20 @@
             <div class="resume-item">
               <h4>EduPlus - European Centre for Education and Skills Development</h4>
               <h5>30.08.2021 - 10.09.2021</h5>
-              <p><em>2-week internship, Braga, Portugal
-                <img src="assets/img/portugal-flag.png" alt="Portugal flag">
-              </em></p>
+              <p>
+                <em>2-week internship, Braga, Portugal
+                  <img src="assets/img/portugal-flag.png" alt="Portugal flag">
+                </em>
+              </p>
               <ul>
                 <li>Upgrading and updating computer hardware</li>
                 <li>Diagnosis and repair of system issues</li>
                 <li>Web application development</li>
               </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1bBi0El6h2lcU8_B0ZttHsTW_V1s-KIMa/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificate</a>
+                <a href="https://drive.google.com/file/d/13sC-6PSM2MbHe5CxiuwQbLVR8SOdCDhj/view" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">View Europass Mobility</a>
+              </div>
             </div>
 
             <div class="resume-item">
@@ -246,6 +254,10 @@
                 <li>EE.08 - Installation and operation of computer systems, peripherals and networks</li>
                 <li>EE.09 - Programming, development and administration of websites and databases</li>
               </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/16G4JiMHNffHFKxdz944KhNcVQSY9YaP7/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View technical diploma</a>
+                <a href="https://drive.google.com/file/d/1IG0tcAtw1S7v03jK4qL-Pa-D8UeSjJXs/view" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">View qualifications</a>
+              </div>
             </div>
 
           </div> <!-- col-lg-6-->
@@ -273,6 +285,9 @@
                   </ul>
                 </li>
               </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1_T56QYE46KCFp0u_q7clnRnJ6XfW3yF5/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificate</a>
+              </div>
             </div>
 
             <div class="resume-item">
@@ -286,6 +301,9 @@
                   </ul>
                 </li>
               </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1_Z23kuGJ9gRimTovfQLuJ3iGBt4MzS_j/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificates</a>
+              </div>
             </div>
             
             <div class="resume-item">
@@ -299,6 +317,61 @@
                   </ul>
                 </li>
               </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1o5Rq9aJnYwbIJewtK1uRLRudnfA7ANim/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificates</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>PCAP: Programming Essentials in Python</h4>
+              <h5>07.04.2022 - 23.06.2022</h5>
+              <ul>
+                <li>Python programming basics: algorithms, lists, tuples, dictionaries, functions, exceptions, modules and packages, file handling, and object-oriented programming</li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1tTe8hAFu3SPOwy1Uy-LiwaOAjZTvLxrn/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificate</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>CCNA Cybersecurity Operations</h4>
+              <h5>29.11.2021 - 31.03.2022</h5>
+              <ul>
+                <li>A course completed on the NetAcad platform, including network security on Windows and Linux systems, analyzing network protocols using Wireshark, and using system tools to identify network attacks.
+                </li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1Ep2J9rM0FXwlKgqWjCuCAiBEMcgjDyx9/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificate</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>Programming logic controllers SIMATIC S7-300/400</h4>
+              <h5>14.02.2022 - 17.02.2022</h5>
+              <ul>
+                <li>Fundamentals of programmable logic controllers PLC and SIMATIC Step 7 software</li>
+                <li>Fundamentals of LAD and FBD graphics languages and STL programming language</li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1Ro8wHuruUht7-judxHSYjHO4_2ME0SCu/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificate</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>CISCO CCNAv7</h4>
+              <h5>06.10.2020 - 24.10.2021</h5>
+              <ul>
+                <li>CCNAv7 course composing of three modules, achieved on the NetAcad platform:
+                  <ul>
+                    <li>Introduction to Networks</li>
+                    <li>Switching, Routing, and Wireless Essentials</li>
+                    <li>Enterprise Networking, Security, and Automation</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1jWbPCnbMC7NRDF0kB4FBTQr74UgUn3kI/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificates</a>
+              </div>
             </div>
 
             <div class="resume-item">
@@ -352,7 +425,8 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> <br>
+        Edited by Krystian Będuch
       </div>
     </div>
 
