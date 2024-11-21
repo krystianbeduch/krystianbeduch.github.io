@@ -23,22 +23,23 @@
     margin-bottom: 5px;
 }
 
-.language-select {
-    background-color: #000;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 16px;
-    color: #fff;
-    margin-left: 20px;
-    appearance: none; /* Usun domyslny styl selectboxa */
-    -webkit-appearance: none; /* Usun domyslny styl selectboxa dla Safari */
+.service-item .d-flex {
+    margin-top: 15px;
 }
 
-.language-select option {
-    background-color: #000;
-    color: #fff;
-    appearance: none;
+.service-item .d-flex a {
+    min-width: 7vw;
+}
+
+
+.language-link img {
+    height: 32px;
+    width: auto;
+    transition: transform 0.3s ease; /* Plynne powiekszenie */
+}
+
+.language-link img:hover {
+    transform: scale(1.2); /* Powiekszenie o 20% */
 }
 
 p#building {

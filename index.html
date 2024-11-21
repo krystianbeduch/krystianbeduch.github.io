@@ -9,11 +9,14 @@
   <meta name="google-site-verification" content="7MgytyRcUqwJFD14IeU8ItLf1LxKRjtT64w2_IQxYoU" />
   <link rel="canonical" href="https://krystianbeduch.github.io/">
 
+  <!-- Relationships between language versions -->
+  <link rel="alternate" href="https://krystianbeduch.github.io/en/" hreflang="en">
+  <link rel="alternate" href="https://krystianbeduch.github.io/" hreflang="pl">
+
   <meta name="description" content="Portfolio Krystian Będuch - programista Java specjalizujący się w Spring Boot, HTML/CSS i bazach danych SQL. Zapraszam do mojego portfolio i kontaktu!">
   <meta name="keywords" content="Krystian, Będuch, Krystian Będuch, Java, SpringBoot, SQL, HTML, CSS, JavaScript, PHP, Java Developer, Database, Web Developer">
 
   <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
@@ -57,14 +60,6 @@
   <!-- Own Styles -->
   <link href="assets/css/my-style.css" rel="stylesheet">
 
-  <script>
-    function switchLanguage(select) {
-      window.location.href = select.value;
-    }
-    // if (window.location.pathname.endsWith("index.html")) {
-    //   window.location.replace("https://krystianbeduch.github.io/");
-    // }
-  </script>
 </head>
 
 <body class="index-page">
@@ -72,7 +67,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center">
         <img src="assets/img/favicons/logo.png" alt="Logo">
         <h2 class="sitename">Portfolio</h2>
       </a>
@@ -86,14 +81,12 @@
           <li><a href="#services">Projekty</a></li>
           <li><a href="#contact">Kontakt</a></li>
           <li>
-            <label>
-              <select class="language-select" onchange="switchLanguage(this);">
-                <option value="index.html">Polski</option>
-                <option value="index-en.html">English</option>
-              </select>
-            </label>
+            <a href="/en" class="language-link" hreflang="en">
+              <img src="assets/img/united-kingdom-flag.png" alt="United Kingdom flag">
+            </a>
           </li>
         </ul>
+
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -401,27 +394,28 @@
       <div class="container">
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-bus-front-fill"></i>
-              </div>
-              <a href="" class="stretched-link" target="_blank">
-                <h3>Blog programistyczny</h3>
-              </a>
-              <p>...</p>
-            </div>
-          </div>
+<!--          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">-->
+<!--            <div class="service-item  position-relative">-->
+<!--              <div class="icon">-->
+<!--                <i class="bi bi-bus-front-fill"></i>-->
+<!--              </div>-->
+<!--              <a href="" class="stretched-link" target="_blank">-->
+<!--                <h3>Blog programistyczny</h3>-->
+<!--              </a>-->
+<!--              <p>...</p>-->
+<!--            </div>-->
+<!--          </div>-->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
               <div class="icon">
                 <i class="bi bi-bus-front-fill"></i>
               </div>
-              <a href="https://github.com/krystianbeduch/tour-explorer" class="stretched-link" target="_blank">
-                <h3>Tour Explorer</h3>
-              </a>
+              <h3>Tour Explorer</h3>
               <p>Projekt aplikacji desktopowej zrealizowany w trakcie studiów. TourExplorer to aplikacja dla klientów biura podróży oraz przewodników, która pomaga im w łatwym zarządzaniu klientami, ofertami wycieczek oraz rezerwacjami dla konkretnych klientów. Projekt zrealizowany w środowisku Visual Studio w języku C#.</p>
+              <div class="d-flex left-content-center">
+                <a href="https://github.com/krystianbeduch/tour-explorer" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">Zobacz kod źródłowy</a>
+              </div>
             </div>
           </div>
 
@@ -430,10 +424,11 @@
               <div class="icon">
                 <i class="bi bi-dice-5-fill"></i>
               </div>
-              <a href="https://github.com/krystianbeduch/dice-roll" class="stretched-link" target="_blank">
-                <h3>Dice Roll</h3>
-              </a>
+              <h3>Dice Roll</h3>
               <p>Prosta konsolowa gra w kości, która wprowadza w obiektowe podejście do programowania w Javie. Gracze mogą wybierać spośród różnych trybów rozgrywki: solo lub w trybie wieloosobowym (z botami lub innymi graczami).</p>
+              <div class="d-flex left-content-center">
+                <a href="https://github.com/krystianbeduch/dice-roll" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">Zobacz kod źródłowy</a>
+              </div>
             </div>
           </div>
 
@@ -442,11 +437,12 @@
               <div class="icon">
                 <i class="bi bi-file-earmark-diff-fill"></i>
               </div>
-<!--              <a href="https://github.com/krystianbeduch/form-for-coordinators" class="stretched-link" target="_blank">-->
-              <a href="https://krystianbeduch.github.io/form-for-coordinators/" class="stretched-link" target="_blank">
-                <h3>Form for coordinators</h3>
-              </a>
+              <h3>Form for coordinators</h3>
               <p>Projekt zrealizowany podczas stażu w Portugalii jako jedno z zadań zaliczeniowych. Celem projektu było stworzenie narzędzia, za pomocą którego koordynatorzy staży będą mogli wysyłać zgłoszenia dotyczące programu wyjazdu swojej grupy i przekazać niezbędne informacje takie jak liczba uczestników i opiekunów, data przyjazdu i wyjazdu, numery lotów samolotowych itp. Projekt wykonany z wykorzystaniem HTML, CSS, PHP i bazy danych MySQL.</p>
+              <div class="d-flex left-content-center">
+                <a href="https://krystianbeduch.github.io/form-for-coordinators/" target="_blank" rel="noopener" class="btn btn-primary mx-2">Zobacz stronę</a>
+                <a href="https://github.com/krystianbeduch/form-for-coordinators" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">Zobacz kod źródłowy</a>
+              </div>
             </div>
           </div>
 
@@ -455,11 +451,12 @@
               <div class="icon">
                 <i class="bi bi-car-front-fill"></i>
               </div>
-<!--              <a href="https://github.com/krystianbeduch/car-rental" class="stretched-link" target="_blank">-->
-              <a href="https://krystianbeduch.github.io/car-rental/" class="stretched-link" target="_blank">
-                <h3>Car Rental</h3>
-              </a>
+              <h3>Car Rental</h3>
               <p>Projekt zaliczeniowy w technikum na zajęciach z programowania stron internetowych. Projekt to prosta strona wypożyczalni samochodów zrealizowana wyłącznie od strony klienckiej HTML i CSS.</p>
+              <div class="d-flex left-content-center">
+                <a href="https://krystianbeduch.github.io/car-rental/" target="_blank" rel="noopener" class="btn btn-primary mx-2">Zobacz stronę</a>
+                <a href="https://github.com/krystianbeduch/car-rental" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">Zobacz kod źródłowy</a>
+              </div>
             </div>
           </div>
 
@@ -468,10 +465,11 @@
               <div class="icon">
                 <i class="bi bi-cup-hot-fill"></i>
               </div>
-              <a href="https://github.com/krystianbeduch/coffe-automat" class="stretched-link" target="_blank">
-                <h3>Coffee Automat</h3>
-              </a>
+              <h3>Coffee Automat</h3>
               <p>Projekt aplikacji desktopwej będący implementacją automatu wendingowego do kawy (oraz innych napojów) wykonany w środowisku RAD - C++ Builder która korzysta z biblioteki VCL.</p>
+              <div class="d-flex left-content-center">
+                <a href="https://github.com/krystianbeduch/coffe-automat" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">Zobacz kod źródłowy</a>
+              </div>
             </div>
           </div>
 
@@ -481,10 +479,11 @@
                 <i class="bi bi-cpu-fill"></i>
                 <i class="bi bi-music-note"></i>
               </div>
-              <a href="https://github.com/krystianbeduch/pc-speaker-music" class="stretched-link" target="_blank">
-                <h3>PC Speaker Music</h3>
-              </a>
+              <h3>PC Speaker Music</h3>
               <p>Projekt zaliczeniowy na studiach z programownia niskopoziomowego. Zadanie programu to odgrywanie muzyki przy pomocy głośnika systemowego. Melodia czytana jest z pliku w formacie RTTTL. Całość została zrealizowana z wykorzystaniem emulatora środowiska DOS w asemblerze 16-bitowym.</p>
+              <div class="d-flex left-content-center">
+                <a href="https://github.com/krystianbeduch/pc-speaker-music" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">Zobacz kod źródłowy</a>
+              </div>
             </div>
           </div>
 

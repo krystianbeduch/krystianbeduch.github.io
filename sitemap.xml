@@ -6,13 +6,17 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://krystianbeduch.github.io/</loc>
-  <lastmod>2024-11-13</lastmod>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://krystianbeduch.github.io/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://krystianbeduch.github.io/en/"/>
+  <lastmod>2024-11-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://krystianbeduch.github.io/index-en.html</loc>
-  <lastmod>2024-11-13</lastmod>
+  <loc>https://krystianbeduch.github.io/en/</loc>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://krystianbeduch.github.io/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://krystianbeduch.github.io/en/"/>
+  <lastmod>2024-11-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.70</priority>
 </url>
