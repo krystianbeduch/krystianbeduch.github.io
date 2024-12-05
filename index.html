@@ -14,7 +14,9 @@
   <link rel="alternate" href="https://krystianbeduch.github.io/" hreflang="pl">
 
   <meta name="description" content="Portfolio Krystian Będuch - programista Java specjalizujący się w Spring Boot, HTML/CSS i bazach danych SQL. Zapraszam do mojego portfolio i kontaktu!">
-  <meta name="keywords" content="Krystian, Będuch, Krystian Będuch, Java, SpringBoot, SQL, HTML, CSS, JavaScript, PHP, Java Developer, Database, Web Developer">
+  <meta name="keywords" content="Krystian, Będuch, Java, SpringBoot, SQL, HTML, CSS, JavaScript, PHP, Java Developer, Database, Web Developer">
+  <meta name="author" content="Krystian Będuch">
+  <meta name="robots" content="all">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
@@ -60,6 +62,10 @@
   <!-- Own Styles -->
   <link href="assets/css/my-style.css" rel="stylesheet">
 
+  <!-- Own Form Handling -->
+  <script src="assets/js/form-handler.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
   <script>
     if (window.location.pathname.endsWith("index.html")) {
       window.location.href = "/";
@@ -78,7 +84,6 @@
         <h2 class="sitename">Portfolio</h2>
       </a>
 
-      <p id="building">Strona w budowie</p> <!-- DELETE -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
@@ -379,14 +384,60 @@
             </div>
 
             <div class="resume-item">
-              <p>.....</p>
+              <h4>NATP Novell #3124 & #3125</h4>
+              <h5>06.09.2021 - 22.10.2021</h5>
+              <ul>
+                <li>Dwa szkolenia wprowadzające w świat administracji systemami Novell, od podstaw aż po zaawansowane techniki zarządzania serwerem. Kursy zrealizowane na systemach Linux: SLED (SUSE Linux Enterprise Desktop)oraz SLES (SUSE Linux Enterprise Server):
+                  <ul>
+                    <li>#3124 SLES 12 Administration</li>
+                    <li>#3125 SLES Advanced Administration</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1g2IJwgFHaQRp0DGq2XKyFgI3peSDH9CQ/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">Zobacz certyfikaty</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>CCNA Security</h4>
+              <h5>07.04.2021 - 22.09.2021 (z przerwą wakacyjną)</h5>
+              <ul>
+                <li>Kurs realizowany na platformie NetAcad, obejmujący zabezpieczenia urządzeń Cisco, konfigurację serwera AAA, list kontroli dostępu (ACL) na routerach, firewalle, NAT i PAT, a także sieci VPN.</li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1ROnGBMobDET5ANM3kH0SC2ATa5wLJJ67/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">Zobacz certyfikat</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>IoT Fundamentals: Connecting Things + IoE</h4>
+              <h5>16.03.2021 - 25.06.2021</h5>
+              <ul>
+                <li>Wprowadzenie do Internetu Wszechrzeczy (IoE).</li>
+                <li>Wykorzystanie czujników, mikrokontrolerów Arduino i Raspberry Pi, z użyciem języka Python, do tworzenia prostych kontrukcji IoT.</li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1W6Np9-zxOuG4cSE4u7VBRjRE-dxPNOfb/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">Zobacz certyfikaty</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>ECDL Web Editing</h4>
+              <h5>07.12.2020 - 06.03.2021</h5>
+              <ul>
+                <li>Tworzenie i edycja stron internetowych z wykorzystaniem HTML5 i CSS3.</li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1nNzsHwY7t5p9QatgtWV2Aur3kOC1tbFm/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">Zobacz certyfikat</a>
+              </div>
             </div>
 
           </div> <!-- Col lg 6-->
 
         </div> <!-- Row-->
 
-      </div> <!-- Conteiner-->
+      </div> <!-- Container-->
     </section> <!-- Resume Section -->
 
     <!-- Services Section -->
@@ -472,7 +523,7 @@
                 <i class="bi bi-cup-hot-fill"></i>
               </div>
               <h3>Coffee Automat</h3>
-              <p>Projekt aplikacji desktopwej będący implementacją automatu wendingowego do kawy (oraz innych napojów) wykonany w środowisku RAD - C++ Builder która korzysta z biblioteki VCL.</p>
+              <p>Projekt aplikacji desktopowej będący implementacją automatu wendingowego do kawy (oraz innych napojów) wykonany w środowisku RAD - C++ Builder która korzysta z biblioteki VCL.</p>
               <div class="d-flex left-content-center">
                 <a href="https://github.com/krystianbeduch/coffe-automat" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2">Zobacz kod źródłowy</a>
               </div>
@@ -506,6 +557,79 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Kontakt</h2>      
       </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Lokalizacja</h3>
+                  <p>Katowice / Częstochowa, śląskie, Polska</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Telefon</h3>
+                  <p>+48 503 722 121</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>beduch_krystian@o2.pl</p>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- row gy-5 -->
+        </div> <!-- info-wrap -->
+
+        <form action="https://formspree.io/f/xyzyydao" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <label for="name" class="form-label">Imię:</label>
+              <input type="text" name="name" class="form-control" placeholder="Twoje Imię" required="" id="name">
+            </div>
+
+            <div class="col-md-6 ">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" name="email" placeholder="Twój Email" required="" id="email">
+            </div>
+
+            <div class="col-md-12">
+              <label for="subject" class="form-label">Temat:</label>
+              <input type="text" class="form-control" name="subject" placeholder="Temat" required="" id="subject">
+            </div>
+
+            <div class="col-md-12">
+              <label for="message" class="form-label">Wiadomość:</label>
+              <textarea class="form-control" name="message" rows="6" placeholder="Wiadomość" required="" id="message"></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Ładowanie</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Twoja wiadoomść została wysłana. Dzięki!</div>
+
+              <button type="submit">Wyślij wiadoomść</button>
+            </div>
+
+          </div> <!-- row gy-4 -->
+        </form>
+
+      </div> <!-- container -->
 
     </section>
     <!-- Contact Section -->

@@ -13,8 +13,10 @@
   <link rel="alternate" href="https://krystianbeduch.github.io/en/" hreflang="en">
   <link rel="alternate" href="https://krystianbeduch.github.io/" hreflang="pl">
 
-  <meta name="description" content="Krystian Będuch - Java developer specializing in Spring Boot, HTML/CSS, and SQL databases. Explore my portfolio and reach out!">
-  <meta name="keywords" content="Krystian, Będuch, Java, SpringBoot, SQL, HTML, CSS, JavaScript, PHP">
+  <meta name="description" content="Portfolio Krystian Będuch - Java developer specializing in Spring Boot, HTML/CSS, and SQL databases. Explore my portfolio and reach out!">
+  <meta name="keywords" content="Krystian, Będuch, Java, SpringBoot, SQL, HTML, CSS, JavaScript, PHP, Java Developer, Database, Web Developer">
+  <meta name="author" content="Krystian Będuch">
+  <meta name="robots" content="all">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-icon-57x57.png">
@@ -60,6 +62,10 @@
   <!-- Own Styles -->
   <link href="../assets/css/my-style.css" rel="stylesheet">
 
+  <!-- Own Form Handling -->
+  <script src="../assets/js/form-handler.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
   <script>
     if (window.location.pathname.endsWith("index.html")) {
       window.location.href = "/en/";
@@ -78,7 +84,6 @@
         <h2 class="sitename">Portfolio</h2>
       </a>
 
-      <p id="building">Website is being made</p> <!-- DELETE -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
@@ -377,14 +382,60 @@
             </div>
 
             <div class="resume-item">
-              <p>.....</p>
+              <h4>NATP Novell #3124 & #3125</h4>
+              <h5>06.09.2021 - 22.10.2021</h5>
+              <ul>
+                <li>Two courses introducing the world of Novell systems administration, from the basics to advanced server management techniques. Courses delivered on Linux systems: SLED (SUSE Linux Enterprise Desktop)and SLES (SUSE Linux Enterprise Server):
+                  <ul>
+                    <li>#3124 SLES 12 Administration</li>
+                    <li>#3125 SLES Advanced Administration</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1g2IJwgFHaQRp0DGq2XKyFgI3peSDH9CQ/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificates</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>CCNA Security</h4>
+              <h5>07.04.2021 - 22.09.2021 (with a holiday break)</h5>
+              <ul>
+                <li>A course completed on the NetAcad platform, including Cisco device security, AAA server configuration, access control lists (ACLs) on routers, firewalls, NAT and PAT, and VPNs.</li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1ROnGBMobDET5ANM3kH0SC2ATa5wLJJ67/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificate</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>IoT Fundamentals: Connecting Things + IoE</h4>
+              <h5>16.03.2021 - 25.06.2021</h5>
+              <ul>
+                <li>Introduction to the Internet of Everything (IoE).</li>
+                <li>Using sensors, sensors, Arduino and Raspberry Pi microcontrollers, using Python, to make simple IoT devices.</li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1W6Np9-zxOuG4cSE4u7VBRjRE-dxPNOfb/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificates</a>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>ECDL Web Editing</h4>
+              <h5>07.12.2020 - 06.03.2021</h5>
+              <ul>
+                <li>Create and edit web pages using HTML5 and CSS3.</li>
+              </ul>
+              <div class="d-flex left-content-center">
+                <a href="https://drive.google.com/file/d/1nNzsHwY7t5p9QatgtWV2Aur3kOC1tbFm/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary mx-2">View certificate</a>
+              </div>
             </div>
 
           </div> <!-- col-lg-6 -->
 
         </div> <!-- Row-->
 
-      </div> <!-- Conteiner-->
+      </div> <!-- Container-->
     </section> <!-- Resume Section -->
 
     <!-- Services Section -->
@@ -493,8 +544,81 @@
         <h2>Contact</h2>      
       </div>
 
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Katowice / Częstochowa, Silesia, Poland</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+48 503 722 121</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>beduch_krystian@o2.pl</p>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- row gy-5 -->
+        </div> <!-- info-wrap -->
+
+        <form action="https://formspree.io/f/xyzyydao" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="" id="name">
+            </div>
+
+            <div class="col-md-6 ">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="" id="email">
+            </div>
+
+            <div class="col-md-12">
+              <label for="subject" class="form-label">Subject:</label>
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="" id="subject">
+            </div>
+
+            <div class="col-md-12">
+              <label for="message" class="form-label">Message:</label>
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required="" id="message"></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div> <!-- row gy-4 -->
+        </form>
+
+      </div> <!-- container -->
+
     </section>
-    <!-- /Contact Section -->
+    <!-- Contact Section -->
 
   </main>
 
